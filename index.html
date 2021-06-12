@@ -57,15 +57,15 @@
       <!-- <legend class="textarea make_width input_box"><strong>Choice of Food:</strong></legend> -->
   <br><br>
   <label for="indian">Indian</label>
-  <input type="checkbox" name="indian" value="indian"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <input type="checkbox" name="food" value="indian"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
   <label for="chinese">Chinese</label>
-  <input type="checkbox" name="chinese" value="chinese"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <input type="checkbox" name="food" value="chinese"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
   <label for="italian">Italian</label>
-  <input type="checkbox" name="italian" value="italian"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <input type="checkbox" name="food" value="italian"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
   <label for="german">German</label>
-  <input type="checkbox" name="german" value="german"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  <input type="checkbox" name="food" value="german"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
   <label for="french">French</label>
-  <input type="checkbox" name="french" value="french">
+  <input type="checkbox" name="food" value="french">
   </div>
   <br>    
   
@@ -431,6 +431,16 @@ function fill(){
    var city= document.querySelector(".city1").value;
   document.querySelector(".city2").innerText= city;
   
+  
+  var radio = document.querySelector("input[name='gender']:checked").value;
+   document.querySelector(".gender2").innerText= radio;
+  
+    var checklist = document.querySelectorAll("input[name='food']:checked"); var res=[];
+  for(let i=0;i<checklist.length;i++){
+    if((checklist[i].value) != 'undefined') {
+      res.push(checklist[i].value);}
+  }
+   document.querySelector(".food2").innerText= [...res];
   
   
 
