@@ -411,6 +411,13 @@
 
 function fill(){
  
+	function fillit(){
+		
+		if(check()){
+		fillit();
+    document.querySelector("form").reset();
+	}
+		
  var fname= document.querySelector(".fname1").value;
   document.querySelector(".fname2").innerText= fname;
   
@@ -449,9 +456,8 @@ function fill(){
 
  var coun = document.querySelector("#country1");
    document.querySelector(".country2").innerText= coun.value;
+	}
 	
-	if(check())
-    document.querySelector("form").reset();
 	
 	function check(){
    let checklist = document.querySelectorAll("input[name='food']:checked"); 
