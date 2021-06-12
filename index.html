@@ -410,13 +410,14 @@
  <script>
 
 function fill(){
- 
-	function fillit(){
-		
-		if(check()){
+	
+	if(check()){
 		fillit();
     document.querySelector("form").reset();
 	}
+ 
+	function fillit(){	
+		
 		
  var fname= document.querySelector(".fname1").value;
   document.querySelector(".fname2").innerText= fname;
