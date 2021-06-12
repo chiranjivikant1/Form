@@ -1,0 +1,100 @@
+/*
+Developed by Chiranjivi Kant on 12 June 2021
+Preference Form Version 1.0
+https://github.com/chiranjivikant1
+*/
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: slateblue;
+  color: white;
+}
+
+.body_class {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  margin-right: 60px;
+}
+
+.input_box {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.make_width {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container {
+  border-radius: 5px;
+}
+
+.mandatory ::after {
+  content: " *";
+  color: red;
+}
+
+.top_banner {
+  background-color: slateblue;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+  color: #ffffff;
+}
+
+#radio_button {
+  align: center;
+  text-align: center;
+}
+
+.button {
+  background-color: slateblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  display: grid;
+}
+
+.input_box {
+  border-left-width: 7px;
+  border-left-color: slateblue;
+}
+
+.forced_left {
+  text-align: left-side;
+  margin-left: 0px;
+}
