@@ -87,7 +87,7 @@
   
   <label for="state"><strong>State:</strong></label>
   <br>
-  <select name="state" class="make_width input_box" >
+  <select id="state" name="state" class="make_width input_box" >
       <option value="No State Selected" checked> Select your State</option>
       <option value="Andhra Pradesh">Andhra Pradesh</option>
       <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -131,7 +131,7 @@
   
   <label for="country"><strong>Country:</strong></label>
   <br>    
-  <select id="country" class="make_width input_box" name="country">
+  <select id="country1" class="make_width input_box" name="country">
       <option value="No Country Selected" checked> Select your Country</option>
       <option value="Afganistan">Afghanistan</option>
       <option value="Albania">Albania</option>
@@ -443,7 +443,12 @@ function fill(){
    document.querySelector(".food2").innerText= [...res];
   
   
+ var state = document.querySelector("#state");
+   document.querySelector(".state2").innerText= state.value;
 
+
+ var coun = document.querySelector("#country1");
+   document.querySelector(".country2").innerText= coun.value;
 
 }
  </script>     
