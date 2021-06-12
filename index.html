@@ -450,7 +450,18 @@ function fill(){
  var coun = document.querySelector("#country1");
    document.querySelector(".country2").innerText= coun.value;
 	
-	document.querySelector("form").reset();
+	if(check())
+    document.querySelector("form").reset();
+	
+	function check(){
+   let checklist = document.querySelectorAll("input[name='food']:checked"); 
+  if(checklist.length<2){
+    alert('please select any 2');
+    return false;
+  }
+  else
+    return true;
+}
 
 }
  </script>     
